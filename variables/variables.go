@@ -29,4 +29,12 @@ func main(){
 	const pi float64 = 3.14 // const is a keyword used to declare a constant. Constants are variables whose values cannot be changed once they are assigned.
 	// pi = 3.14159 // This will throw an error because we are trying to change the value of a constant
 	fmt.Println(pi)
+
+	a := 10 // := is a shorthand operator used to declare and initialize a variable. Go will infer the type of the variable
+	fmt.Println(a)
+
+	var Public  = "Data is public" // Variables starting with a capital letter are public and can be accessed from other packages
+	var private  = "Data is private"
+	fmt.Println(Public)
+	fmt.Println(private)
 }
