@@ -2,6 +2,15 @@
 
 Welcome to my **Golang Learning** repository! This repo contains all the codes and concepts I learn as I explore the **Go programming language**.
 
+## Table of Contents
+
+1. [📌 Why I Started Learning Go](#📌-why-i-started-learning-go)
+2. [📖 What You’ll Find in This Repo](#📖-what-youll-find-in-this-repo)
+3. [🔥 How to Run the Code](#🔥-how-to-run-the-code)
+4. [📂 Folder Structure](#📂-folder-structure)
+5. [📗 Resources I'm Using](#📗-resources-im-using)
+6. [💡 Stay Connected](#💡-stay-connected)
+
 ## 📌 Why I Started Learning Go
 
 I decided to learn **Go** because of its:
@@ -50,7 +59,7 @@ golang-learning/
 │── main.go
 ```
 
-## Resources I'm Using
+## 📗 Resources I'm Using
 
 1. [A Tour of Go](https://go.dev/tour/welcome/1)
 2. [Official Go Documentation](https://go.dev/doc/)
