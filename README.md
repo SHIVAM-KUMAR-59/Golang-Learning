@@ -44,8 +44,10 @@ golang-learning/
 │── 04. functions/
 │── 05. error-handling/
 │── 06. array/
-│── main.go
+│── .gitignore
 │── README.md
+│── go.mod
+│── main.go
 ```
 
 ## Resources I'm Using
