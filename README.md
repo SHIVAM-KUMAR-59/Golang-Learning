@@ -56,6 +56,8 @@ golang-learning/
 │── 07. slices/
 │── 08. conditionals/
 │── 09. switch/
+│── 10. for-loop/
+│── 11. map/
 │── .gitignore
 │── README.md
 │── go.mod
