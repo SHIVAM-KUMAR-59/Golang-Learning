@@ -53,6 +53,9 @@ golang-learning/
 │── 04. functions/
 │── 05. error-handling/
 │── 06. array/
+│── 07. slices/
+│── 08. conditionals/
+│── 09. switch/
 │── .gitignore
 │── README.md
 │── go.mod
