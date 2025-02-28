@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Map is a collection of key-value pairs where each key is unique. It can be unordered.
+// Map is an unordered collection of key-value pairs where each key is unique.
 // A map is a reference type. When a map is assigned to a new variable, they both point to the same internal data structure.
 // Therefore, changes made in one will reflect in the other.
 // The key is used to retrieve the value.
