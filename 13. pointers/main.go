@@ -8,6 +8,13 @@ import "fmt"
 // 1. A pointer is a variable that stores the memory address of another variable.
 // 2. A pointer is declared using the * operator.
 // 3. A pointer is used to share the memory address of a variable.
+// 4. The & operator is used to get the memory address of a variable.
+// 5. The * operator is used to get the value of a pointer.
+
+// Function to modify the value of a variable by reference
+func modifyValueByReference(value *int){
+	*value = 20
+}
 
 func main(){
 
@@ -24,4 +31,8 @@ func main(){
 	var num int = 5;
 	ptr1 = &num // & operator is used to get the memory address of a variable
 	fmt.Println("Value of ptr1:", *ptr1) // Output: 5
+
+	value := 10
+	modifyValueByReference(&value) // Passing the memory address of value
+	fmt.Println("Value after modification:", value) // Output: 20
 }
