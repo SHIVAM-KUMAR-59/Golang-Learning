@@ -58,6 +58,7 @@ golang-learning/
 │── 09. switch/
 │── 10. for-loop/
 │── 11. map/
+│── 12. struct/
 │── .gitignore
 │── README.md
 │── go.mod
