@@ -61,6 +61,7 @@ golang-learning/
 │── 12. struct/
 │── 13. pointers/
 │── 14. data-conversion/
+│── 15. strings/
 │── .gitignore
 │── README.md
 │── go.mod
