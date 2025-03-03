@@ -62,6 +62,7 @@ golang-learning/
 │── 13. pointers/
 │── 14. data-conversion/
 │── 15. strings/
+│── 16. time-package/
 │── .gitignore
 │── README.md
 │── go.mod
