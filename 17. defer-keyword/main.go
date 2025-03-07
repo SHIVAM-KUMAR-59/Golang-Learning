@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Defer Keyword:
+// Defer Keyword
 // - Defer statements are executed in Last-In-First-Out (LIFO) order (like a stack).
 // - Used for cleanup tasks, closing files, unlocking resources, etc.
 
