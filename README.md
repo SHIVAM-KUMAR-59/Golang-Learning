@@ -64,6 +64,7 @@ golang-learning/
 │── 15. strings/
 │── 16. time-package/
 │── 17. defer-keyword/
+│── 18. file-handling/
 │── .gitignore
 │── README.md
 │── go.mod
