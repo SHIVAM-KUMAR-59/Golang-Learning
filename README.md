@@ -66,6 +66,7 @@ golang-learning/
 │── 17. defer-keyword/
 │── 18. file-handling/
 │── 19. web-requests/
+│── 20. handle-url/
 │── .gitignore
 │── README.md
 │── go.mod
