@@ -69,7 +69,7 @@ golang-learning/
 │── 20. handle-url/
 │── 21. handle-json/
 │── 22. crud/
-│── 23. goroutine/
+│── 23. goroutines/
 │── .gitignore
 │── README.md
 │── go.mod
