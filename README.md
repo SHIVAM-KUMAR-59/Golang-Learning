@@ -68,7 +68,8 @@ golang-learning/
 │── 19. web-requests/
 │── 20. handle-url/
 │── 21. handle-json/
-│── 22. get-method/
+│── 22. crud/
+│── 23. goroutine/
 │── .gitignore
 │── README.md
 │── go.mod
