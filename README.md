@@ -70,6 +70,7 @@ golang-learning/
 │── 21. handle-json/
 │── 22. crud/
 │── 23. goroutines/
+│── 24. sync-waitgroup/
 │── .gitignore
 │── README.md
 │── go.mod
