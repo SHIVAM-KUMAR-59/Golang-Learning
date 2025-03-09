@@ -71,6 +71,7 @@ golang-learning/
 │── 22. crud/
 │── 23. goroutines/
 │── 24. sync-waitgroup/
+│── 25. url-shortner/
 │── .gitignore
 │── README.md
 │── go.mod
