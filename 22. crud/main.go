@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-// Package for encoding and decoding JSON
-
-// Package for HTTP client and server implementation
-
 // Todo struct represents the structure of a TODO item
 // fetched from the JSONPlaceholder API.
 type Todo struct {
