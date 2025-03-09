@@ -108,8 +108,96 @@ func performPostMethod(){
 
 }
 
+func performUpdateMethod(){
+	todo := Todo{ // Create a new todo to send as data
+		UserId: 239,
+		Title: "Learning GoLang",
+		Completed: false,
+	}
+
+	// Convert the Todo struct to JSON
+	jsonData, marshalErr := json.Marshal(todo)
+	if marshalErr != nil {
+		fmt.Println("Error marshalling:", marshalErr)
+		return
+	}
+
+	// Convert JSON data into string
+	jsonString := string(jsonData)
+
+	// Convert string data to reader
+	jsonReader := strings.NewReader(jsonString)
+
+	// Create a PUT request to create a new TODO item
+	req, putErr := http.NewRequest(http.MethodPut, "https://jsonplaceholder.typicode.com/todos/1", jsonReader)
+	if putErr != nil{
+		fmt.Println("Error Updating data", putErr)
+		return
+	}
+	// Set the content type header
+	req.Header.Set("Content-Type", "application/json")
+
+	// Send the request
+	res, sendErr := http.DefaultClient.Do(req)
+	if sendErr != nil{
+		fmt.Println("Error sending data", sendErr)
+		return
+	}
+	defer res.Body.Close()
+
+	// Check if the response status code is not 200 (OK)
+	if res.StatusCode != http.StatusOK {
+		fmt.Println("Error getting data:", res.StatusCode)
+		return
+	}
+
+	// Convert the response in readable from
+	data, readErr := ioutil.ReadAll(res.Body)
+	if readErr != nil{
+		fmt.Println("Error while reading response:", readErr)
+		return
+	}
+
+	fmt.Println(string(data))
+}
+
+func performDeleteMethod(){
+
+	// Create DELETE Request
+	req, delErr := http.NewRequest(http.MethodDelete, "https://jsonplaceholder.typicode.com/todos/1", nil)
+	if delErr != nil{
+		fmt.Println("Error Deleting Data", delErr)
+	}
+
+	// Send the request
+	res, sendErr := http.DefaultClient.Do(req)
+	if sendErr != nil{
+		fmt.Println("Error sending data", sendErr)
+		return
+	}
+	defer res.Body.Close()
+
+	// Check the status code
+	if(res.StatusCode != http.StatusOK){
+		fmt.Println("Error getting data:", res.StatusCode)
+		return
+	}
+
+	// Read the response body
+	data, readErr := ioutil.ReadAll(res.Body)
+	if readErr != nil{
+		fmt.Println("Error while reading response:", readErr)
+		return
+	}
+
+	fmt.Println(string(data))
+	fmt.Println("Deleted Successfully with status code: ", res.StatusCode )
+}
+
 func main() {
 	
 	// performGetMethod()
-	performPostMethod()
+	// performPostMethod()
+	// performUpdateMethod()
+	// performDeleteMethod()
 }
